@@ -8,4 +8,7 @@ main = do
   h <- connectTo server (PortNumber (fromIntegral port))
   hSetBuffering h NoBuffering
   t <- hGetContents h
-  print t
+  print tmodule Main where
+
+main :: IO ()
+main = putStrLn "Hello, Haskell!"
